@@ -1,12 +1,7 @@
 import re, time
 from bs4 import BeautifulSoup
 
-def escapeString(html_doc):
-	html_doc.replace("\"", "&quot;")
-	html_doc.replace("&", "&amp;")
-	html_doc.replace("<", "&lt;")
-	html_doc.replace(">", "&gt;")
-	return html_doc
+
 
 def html2bb(html_doc):
 	soup = BeautifulSoup(html_doc)
